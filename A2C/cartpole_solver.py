@@ -10,7 +10,7 @@ if __name__ == '__main__':
     agent = A2C(alpha=0.0001, beta=0.0005, gamma=0.99, input_dim=inputs,
                 hidden_dim_1=32, hidden_dim_2=16, output_dim=output)
     reward_history = []
-    num_episodes = 2500
+    num_episodes = 1000
     for i in range(num_episodes):
         done = False
         state = env.reset()
